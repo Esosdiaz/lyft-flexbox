@@ -1,0 +1,83 @@
+*{/*llamada unversal, reset de margenes, padding y llamada a la fuente*/
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif; 
+}
+nav{ /*establece el ancho, color, alto, y posicion de la barra de navegacion*/
+    width: 100%;
+    height: 13%;
+    background-color: none; 
+    position: fixed;
+    z-index: 1;
+}
+
+.logo{ /*llamada al logo, y establece posición, escala y tamaño del mismo*/
+    left: 0;
+    top: 7px;
+    width: 128px;
+    height: 67px;
+    padding: 0.4% 2%;
+    text-align: left;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-image: url("../assets/images/logo-white.png");
+    background-size: 40px 29px;
+}
+.enlaces{ /*estilos de los enlaces*/
+     list-style: none;
+     position: absolute;
+     top: 21px;
+     right: 100px;
+     margin: 0;
+     padding: 0;
+     overflow: hidden;
+    }
+.boton-login {
+    text-align: center;
+    cursor: pointer;
+    color: #333447;
+    letter-spacing: 1px;
+    font-size: 90%;
+    padding: .8em 1.2em;
+    background-color: transparent;
+    margin: 0;
+    border: none;
+    font-weight: 300;
+    border-radius: 5px;
+    font-size: 85%;
+    font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+    border: 1px solid;
+}
+.nav1 ul{
+    overflow: hidden;
+    justify-content: space-between;
+    flex-direction: row;
+    display: flex;
+    height: inherit;
+}
+.nav1 ul li a { /*enlaces de la barra*/
+    text-decoration: none;
+    color: white;
+    font-size: 90%;
+    align-items: center;
+    display: flex;
+    padding: .5em 1em;
+    height: auto;
+    width: auto;
+    opacity: 1;
+    border-radius: 5px;
+}
+
+.nav1 li a:hover{ /*cambia el color cuando el cursor pasa por encima*/
+     background-color: #ff00bf; ;
+}
+#home {
+    overflow: hidden;
+    height: 100vh;
+    width: 100%;
+}
+#home.flex-container {
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: wrap;
+}
