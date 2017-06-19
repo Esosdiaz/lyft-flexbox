@@ -3,7 +3,7 @@
 <head>
 	<title>Lyft - Flexbox</title>
 	<meta charset="UTF-8">
-	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600,800" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,800" rel="stylesheet">
 	<script src="https://use.fontawesome.com/82301b6697.js"></script>
 	<link rel="stylesheet" href="css/common.css">
 	<link rel="stylesheet" href="css/main.css">
@@ -20,39 +20,37 @@
 				</ul>
 		</div>
 	</nav>
-	<section class="home flex-container">
-		<video id="video-fondo" video autobuffer autoplay loop muted>
-	  	<source id="mp4" src="assets/images/hero-video.mp4" ></video>		
-	  	<div class="caja-signup">
-			<h1 class="titulo text-uppercase">Turn miles <br> into money</h1>
-			<h2 class="subtitulo">Sign up to drive with Lift</h2>
-			<input type="" required="" class="inputFormulario" id="inputForm" placeholder="Phone Number"> 
-				<div class="row">
-					<button class="become">Become a driver</button>
-					<a href="#signup" class="signup">Sign Up</a>
-				</div>
-			<p class="parrafo1">Already applied? Check the status of your application here.</p>
-			<p class="parrafo2">Earn money for inviting friends to drive. Learn more</p>
-		</div>
-	</section>
+	<section id="home" class="section-home">
+    	<video id="video-fondo" video autobuffer autoplay loop muted> 
+	  		<source id="mp4" src="assets/images/hero-video.mp4"></video>
+      	</video>
+      	<div class="caja-formulario flex-container">
+      		<h1>TURN MILES <br>INTO MONEY</h1>
+  			<h5>SIGN UP TO DRIVE WITH LYFT.</h5>
+          	<input type="text" id="telefono" name="telefono" placeholder="Phone number" value="">
+     		<div class="btn-enlace flex-container">
+        		<button type="button" name="boton1" id="boton-driver" class="boton-submit">Become a Driver</button>
+        		<a href="#">Sign up to ride</a>
+        	</div>
+  			<p>Already applied? Check the status of application <a href="">here.</a></p>
+  			<p>Earn money for inviting friends to drive. <a href="#">Learn more.</a></p>
+      	</div>
+    </section>
 	<section class="telefono flex-container">
-		<div class="caja-textos">
-			<div class="textos1">
-				<h1 class="titulo1 text-uppercase">A ride in minutes</h1>
-				<p class="subtitulo1">Request a ride and you'll be on your way in minutes. <br> Request. Ride. Repeat.</p>
-			</div>
-			<div class="textos2">
-				<h1 class="titulo2 text-uppercase">Serious about safety</h1>
-				<p class="subtitulo2">From knowing the color of your driver's car to our 24/7 <br> Trust and Safety Team, we got you.</p>
-			</div>
-			<div class="textos3">
-				<h1 class="titulo3 text-uppercase">Happy drivers <br> Happy riders </h1>
-				<p class="subtitulo3">Ride with us and you'll see why 9 out of 10 rides end with five stars. </p>
-			</div>
+		<div class="caja-textos flex-container">
+			<h1 class="titulo1 text-uppercase">A ride in minutes</h1>
+			<p class="subtitulo1">Request a ride and you'll be on your way in minutes. <br> Request. Ride. Repeat.</p><br><br><br><br>
+			<h1 class="titulo2 text-uppercase">Serious about safety</h1>
+			<p class="subtitulo2">From knowing the color of your driver's car to our 24/7 <br> Trust and Safety Team, we got you.</p>
+			<br><br><br><br>
+			<h1 class="titulo3 text-uppercase">Happy drivers <br> Happy riders </h1>				
+			<p class="subtitulo3">Ride with us and you'll see why 9 out of 10 rides end with five stars. </p>
 		</div>
-		<img src="assets/images/phone.png" class="telefono-foto">
-	</section>
-	<footer class="flex-container">
+		<div class="caja-telefono">
+			<img src="assets/images/phone.png" class="telefono-foto">
+		</div>
+	</section><!--
+		<footer class="flex-container">
 		<div class="row">
 			<ul>
 				<li><h6><a href="#" class="text-uppercase">Log In</a></h6></li>
@@ -88,7 +86,7 @@
 		</div>
 		<div class="linea"></div>
 		<p class="legal">©2017 Lyft Inc. Terms Privacy </p>
-	</footer>
+	</footer>-->
 <script src="../js/script.js"></script>
 </body>
 </html>
